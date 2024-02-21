@@ -1,0 +1,27 @@
+﻿<Window x:Class="CIS575Prep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CIS575Prep"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label x:Name="uxArray" Grid.Row="0" Content="Array" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+        <Label x:Name="uxLabelA" Grid.Row="1" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+        <Label x:Name="uxLabelB" Grid.Row="2" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+        <Label x:Name="uxLabelC" Grid.Row="3" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+        <Label x:Name="uxLabelD" Grid.Row="4" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+        <Label x:Name="uxLabelE" Grid.Row="5" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+        <Label x:Name="uxLabelF" Grid.Row="6" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="36"/>
+    </Grid>
+</Window>
