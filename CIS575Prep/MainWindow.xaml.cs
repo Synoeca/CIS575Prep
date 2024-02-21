@@ -20,15 +20,15 @@ namespace CIS575Prep
 
 		public void CheckOccurs(int[] arr)
 		{
-			InspectArraty(IntArray, 'A');
-			InspectArraty(IntArray, 'B');
-			InspectArraty(IntArray, 'C');
-			InspectArraty(IntArray, 'D');
-			InspectArraty(IntArray, 'E');
-			InspectArraty(IntArray, 'F');
+			InspectArray(IntArray, 'A');
+			InspectArray(IntArray, 'B');
+			InspectArray(IntArray, 'C');
+			InspectArray(IntArray, 'D');
+			InspectArray(IntArray, 'E');
+			InspectArray(IntArray, 'F');
 		}
 
-		public void InspectArraty(int[] arr, char order)
+		public void InspectArray(int[] arr, char order)
 		{
 			bool occur = default;
 			switch (order)
@@ -66,6 +66,11 @@ namespace CIS575Prep
 			}
 		}
 
+		/// <summary>
+		/// forall i in 1..n, forall j in 1..n, i != j implies B[i] != B[j]
+		/// </summary>
+		/// <param name="arr"></param>
+		/// <returns></returns>
 		public bool NoIntOccursTwiceA(int[] arr)
 		{
 			bool occurs = false;
@@ -85,6 +90,11 @@ namespace CIS575Prep
 			return occurs;
 		}
 
+		/// <summary>
+		/// forall i in 1..n, forall j in 1..n, B[i] = B[j] implies i = j 
+		/// </summary>
+		/// <param name="arr"></param>
+		/// <returns></returns>
 		public bool NoIntOccursTwiceB(int[] arr)
 		{
 			bool occurs = false;
@@ -104,6 +114,11 @@ namespace CIS575Prep
 			return occurs;
 		}
 
+		/// <summary>
+		/// forall i in 1..n, forall j in 1..n, B[i] != B[j] 
+		/// </summary>
+		/// <param name="arr"></param>
+		/// <returns></returns>
 		public bool NoIntOccursTwiceC(int[] arr)
 		{
 			bool occurs = false;
@@ -120,6 +135,11 @@ namespace CIS575Prep
 			return occurs;
 		}
 
+		/// <summary>
+		/// forall i in 1..n, forall j in 1..n, i != j and B[i] != B[j] 
+		/// </summary>
+		/// <param name="arr"></param>
+		/// <returns></returns>
 		public bool NoIntOccursTwiceD(int[] arr)
 		{
 			bool occurs = false;
@@ -139,6 +159,11 @@ namespace CIS575Prep
 			return occurs;
 		}
 
+		/// <summary>
+		/// forall i in 1..n, forall j in i+1..n, B[i] != B[j] 
+		/// </summary>
+		/// <param name="arr"></param>
+		/// <returns></returns>
 		public bool NoIntOccursTwiceE(int[] arr)
 		{
 			bool occurs = false;
@@ -155,6 +180,11 @@ namespace CIS575Prep
 			return occurs;
 		}
 
+		/// <summary>
+		/// forall i in 1..n-1, B[i] != B[i+1]
+		/// </summary>
+		/// <param name="arr"></param>
+		/// <returns></returns>
 		public bool NoIntOccursTwiceF(int[] arr)
 		{
 			bool occurs = false;
