@@ -12,7 +12,8 @@ namespace CIS575Prep
 		public MainWindow()
 		{
 			InitializeComponent();
-			IntArray = [4, 5, 2, 9, 3, 8];
+			IntArray = [4, 5, 2, 9, 3, 4];
+			//IntArray = [4, 5, 2, 9, 3, 8];
 			uxArray.Content = $"IntArray = [{IntArray[0]}, {IntArray[1]}, {IntArray[2]}, {IntArray[3]}, {IntArray[4]}, {IntArray[5]}]";
 			CheckOccurs(IntArray);
 		}
